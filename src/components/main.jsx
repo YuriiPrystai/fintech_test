@@ -16,6 +16,19 @@ const Main = () => {
   const [popupIsVisible, setPopupIsVisible] = useState(false)
   const [infoForPopup, setInfoForPopup] = useState()
 
+  useEffect(() => {
+    getUsers()
+      .then(({ data }) => {
+        setAllUsers(data)
+      })
+  }, [])
+
+  useEffect(() => {
+    window.localStorage.setItem('selectedUsers', JSON.stringify(selectedUsers))
+    window.localStorage.setItem('selectedUsersIds', JSON.stringify(selectedUsersIds))
+  }, [selectedUsers])
+  
+
   const ShowAddInfo = (userName) => {
     getUserByName(userName)
       .then(({ data }) => {
@@ -48,15 +61,6 @@ const Main = () => {
     setSelectedUsers([])
     setSelectedUsersIds([])
   }
-  
-  useEffect(() => {
-    getUsers()
-      .then(({ data }) => {
-        setAllUsers(data)
-      })   
-  }, [])
-
-  console.log(activeButton);
 
   return (
     <div className="main-content">

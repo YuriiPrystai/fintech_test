@@ -1,5 +1,5 @@
 .main-content {
-  width: 85%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 80%;
+    width: 60%;
     height: 80px;
     margin-bottom: 10px;
     padding: 5px 20px;
@@ -46,13 +46,13 @@
 
     &_avatar {
       width: 70px;
-      margin-right: 20px;
+      margin-right: 3%;
       border-radius: 50%;
     }
 
     &_login {
       min-width: 150px;
-      margin-right: 50px;
+      margin-right: 10%;
     }
 
     &_button {
@@ -72,7 +72,7 @@
     }
 
     &_button-info {
-      margin-right: 30px;
+      margin-right: 3%;
       background-color: rgb(9, 78, 69);
     }
 

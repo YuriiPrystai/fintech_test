@@ -12,12 +12,21 @@
   &_content {
     position: absolute;
     top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     width: 40%;
     height: 200px;
     padding: 2% 4%;
     border-radius: 15px;
     background-color: white;
     box-sizing: border-box;
+
+    p {
+      margin: 0;
+      margin-bottom: 10px;
+    }
 
     &_button-close {
       position: absolute;

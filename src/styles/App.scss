@@ -4,13 +4,21 @@
 @import './main';
 @import './popupWithAddInfo';
 
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: grid;
+}
+
 .app {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  background-color: rgb(216, 216, 216);
+  background-color: white;
 
   &_content {
     width: 100%;

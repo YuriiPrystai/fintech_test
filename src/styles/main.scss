@@ -1,0 +1,91 @@
+.main-content {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 0;
+  background-color: white;
+
+  &_title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  &_button-delete-all {
+    width: 200px;
+    height: 35px;
+    margin-bottom: 20px;
+    border: none;
+    color: white;
+    background-color: rgb(165, 11, 11);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:disabled {
+      background-color: grey;
+      cursor: not-allowed;
+    }
+  }
+
+  &_user-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: rgb(164, 255, 243);
+    box-sizing: border-box;
+
+    &_avatar {
+      width: 70px;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+
+    &_login {
+      min-width: 150px;
+      margin-right: 50px;
+    }
+
+    &_button {
+      width: 100px;
+      height: 35px;
+      border: none;
+      color: white;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:disabled {
+        background-color: grey;
+        cursor: not-allowed;
+      }
+    }
+
+    &_button-info {
+      margin-right: 30px;
+      background-color: rgb(9, 78, 69);
+    }
+
+    &_button-delete {
+      background-color: rgb(165, 11, 11);
+    }
+
+    &_button-select {
+      background-color: rgb(9, 150, 39);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

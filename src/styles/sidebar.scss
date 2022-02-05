@@ -1,0 +1,39 @@
+.sidebar {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 5px 0 15px rgb(105, 105, 105);
+  z-index: 2;
+
+  &_button {
+    width: 70%;
+    height: 40px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    border: none;
+    background-color: rgb(56, 197, 197);
+    color: white;
+    box-shadow: 0 0 5px rgb(12, 53, 53);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .active {
+    box-shadow: none;
+    background-color: rgb(26, 105, 105);
+
+    &:hover {
+      cursor: auto;
+    }
+  }
+}

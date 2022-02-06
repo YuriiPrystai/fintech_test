@@ -132,7 +132,7 @@ const Main = () => {
           {
              displayedUsers.length
               ? (
-                displayedUsers.map((user, index) => {
+                displayedUsers.map((user) => {
                   return (
                     <div key={user.id} className="main-content_user-block">
                       <img className="main-content_user-block_avatar" src={user.avatar_url} alt="" />

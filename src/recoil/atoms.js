@@ -1,8 +1,10 @@
 import { atom } from 'recoil'
 
+import { BUTTON_STATUSES } from '../constants/constants'
+
 export const activeButtonState = atom({
   key: 'activeButton',
-  default: null,
+  default: BUTTON_STATUSES.USERS,
 })
 
 export const usersState = atom({
@@ -12,6 +14,11 @@ export const usersState = atom({
 
 export const selectedUsersState = atom({
   key: 'selectedUsers',
+  default: [],
+})
+
+export const displayedUsersState = atom({
+  key: 'displayedUsers',
   default: [],
 })
 

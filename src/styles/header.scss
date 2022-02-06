@@ -10,6 +10,10 @@
   background-color: rgb(38, 170, 170);
   z-index: 3;
 
+  &_title {
+    margin-right: 10px;
+  }
+
   &_input-search {
     border: 1px solid rgb(5, 75, 75);
   }

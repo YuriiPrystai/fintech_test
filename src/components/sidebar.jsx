@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useRecoilState } from 'recoil'
 
 import { BUTTON_STATUSES } from '../constants/constants'
@@ -6,10 +6,6 @@ import { activeButtonState } from '../recoil/atoms'
 
 const Sidebar = () => {
   const [activeButton, setActiveButton] = useRecoilState(activeButtonState)
-
-  useEffect(() => {
-    setActiveButton(BUTTON_STATUSES.USERS)
-  }, [])
 
   const handleChangeActiveButton = (event) => {
     setActiveButton(event.target.value)

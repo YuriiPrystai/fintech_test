@@ -2,8 +2,8 @@ import './styles/reset.css'
 import './styles/App.scss'
 import Footer from './components/footer'
 import Header from './components/header'
-import Sidebar from './components/sidebar';
-import Main from './components/main';
+import Sidebar from './components/sidebar'
+import Main from './components/main'
 
 function App() {
   return (

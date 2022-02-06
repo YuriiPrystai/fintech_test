@@ -1,1 +1,1 @@
-Deploy are available in ********
+Deploy are available in https://yuriiprystai.github.io/fintech_test/
